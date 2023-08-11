@@ -5,13 +5,17 @@ import logo from '@/assets/logo.jpg';
 import Button from '@/components/Button';
 import { Popover, Transition } from '@headlessui/react';
 import { IconMenu2, IconX } from '@tabler/icons-react';
-import AlgoliaSearch from '@/components/AlgoliaSearch';
 import ThemeSwitcher from 'app/components/ThemeSwitcher';
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
+
+const AlgoliaSearch = dynamic(() => import('@/components/AlgoliaSearch'), {
+  ssr: false,
+});
 
 function NavItem({ href, children }: { href: string; children: string }) {
   const isActive = usePathname() === href;

@@ -13,7 +13,9 @@ const Article = (post: Post) => {
           {post.title}
           <IconPinFilled
             className={clsx(
-              post.pinned ? 'ml-1 group-hover:block hidden' : 'hidden'
+              post.pinned
+                ? 'ml-1 text-zinc-400 group-hover:block hidden'
+                : 'hidden'
             )}
           />
         </Card.Title>
