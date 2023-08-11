@@ -32,12 +32,15 @@ const Footer = () => {
 
           <p className="md:text-right">
             {config.footer?.beian && (
-              <Link
-                href="https://beian.miit.gov.cn/"
-                className="hover:text-zinc-400"
-              >
-                {config.footer.beian} •{' '}
-              </Link>
+              <>
+                <Link
+                  href="https://beian.miit.gov.cn/"
+                  className="hover:text-zinc-400"
+                >
+                  {config.footer.beian}
+                </Link>{' '}
+                •{' '}
+              </>
             )}
             Power by{' '}
             <Link
