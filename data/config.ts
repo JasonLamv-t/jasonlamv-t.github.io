@@ -76,7 +76,7 @@ const config: Config = checkConfigAndEnvironments({
     search: 'algolia',
   },
   footer: {
-    beian: '粤ICP备2021039182号',
+    // beian: '你的备案号',
     socialLinks: [
       [Platform.email, 'jasonlamv-t@hotmail.com'],
       [Platform.github, 'JasonLamv-t'],
