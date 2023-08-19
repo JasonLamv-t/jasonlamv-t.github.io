@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.ts*', './app/**/*.ts*'],
+  content: [
+    './src/**/*.ts*',
+    './app/**/*.ts*',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'class',
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@nextui-org/react').nextui(),
+  ],
   theme: {
     extend: {
       minHeight: {
