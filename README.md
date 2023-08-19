@@ -46,3 +46,7 @@ If you have any questions in use, please ask the issue, and I will reply and dea
 - Need Fix
 
   - [ ] The resouces url error under the data directory caused by the base path configuration
+
+## Get Started
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/JasonLamv-t/tailwind-next-blog)
