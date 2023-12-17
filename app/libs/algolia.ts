@@ -99,7 +99,7 @@ export const useAutocomplete = () => {
                   queries: [
                     {
                       query,
-                      indexName: env.algolia.index_name,
+                      indexName: env.algolia.index_name || '',
                       params: {
                         hitsPerPage: 5,
                         highlightPreTag:
