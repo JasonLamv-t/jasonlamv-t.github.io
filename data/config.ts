@@ -70,6 +70,7 @@ const config: Config = checkConfigAndEnvironments({
   navigation: [
     ['Blogs', '/posts'],
     ['Projects', '/projects'],
+    ['Resources', '/resources'],
     ['About', '/about'],
   ],
   feature: {

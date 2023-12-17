@@ -105,9 +105,26 @@ export const Project = defineDocumentType(() => ({
   },
 }));
 
+export const Resource = defineDocumentType(() => ({
+  name: 'Resource',
+  filePathPattern: 'resources/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    name: { type: 'string', required: true },
+    category: {
+      type: 'enum',
+      options: ['book', 'video', 'article', 'app', 'other'],
+      required: true,
+    },
+    description: { type: 'string', required: true },
+    link: { type: 'string', required: true },
+    coverPath: { type: 'string', required: false },
+  },
+}));
+
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Post, Author, Project],
+  documentTypes: [Post, Author, Project, Resource],
   mdx: {
     remarkPlugins: [remarkGfm, remarkMath, remarkSlug],
     rehypePlugins: [
