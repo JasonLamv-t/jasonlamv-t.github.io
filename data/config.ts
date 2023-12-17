@@ -55,17 +55,16 @@ const checkConfigAndEnvironments = (config: Omit<Config, 'env'>): Config => {
 
 const config: Config = checkConfigAndEnvironments({
   siteMeta: {
-    title: 'Tailwind-next-blog',
+    title: 'Brachistochrone',
     authors: [{ name: 'Jason Lam', url: '/about/JasonLamv-t' }],
-    description: 'Demo of Tailwind-next-blog',
+    description: "Jason Lam's personal website",
     locale: 'zh-CN',
     language: 'zh-cn, en-us',
     theme: 'system',
-    url: 'https://tailwind-next-blog.jasonlam.cc',
+    url: 'https://jasonlam.ccp',
     logo: '/data/images/logo.jpg',
-    banner:
-      'a personal blog project template based on NextJS and TailwindCSS, which can be used out of the box and has a high degree of custom freedom.',
-    siteRepo: 'https://github.com/JasonLamv-t/tailwind-next-blog',
+    banner: "Jason Lam's personal website",
+    siteRepo: 'https://github.com/JasonLamv-t/jasonlamv-t.github.io',
   },
   navigation: [
     ['Blogs', '/posts'],
