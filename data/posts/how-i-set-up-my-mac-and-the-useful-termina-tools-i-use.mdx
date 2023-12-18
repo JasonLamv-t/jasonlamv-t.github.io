@@ -7,8 +7,6 @@ summary: 作为开发人员，尽管我们已经有了现代的 IDE 和系统 UI
 
 作为开发人员，尽管我们已经有了现代的 IDE 和系统 UI 界面，但是终端和命令行仍然是我们在日常中最熟悉的计算机交互手段，在这里我列举我在自己的 Mac 中实际用到的一些配置和包。
 
-## 推荐的环境配置和工具
-
 ### [Homebrew](https://brew.sh/)
 
 Homebrew 或者说 brew 是 Mac 上最具盛名的包管理工具，目前在 GitHub 上已经有 35k Star。通过以下命令你可以快速安装：
@@ -43,12 +41,19 @@ plugins=(git gitignore z zsh-syntax-highlighting zsh-autosuggestions)
 ...
 ```
 
-### 命令行终端
+### 开发工具
 
+- [VSCode]: 无敌；`brew install visual-studio-code`
 - [Warp](https://www.warp.dev/)：一个好用又好看的终端。通过 `brew install --cask warp` 进行安装。
-- [iTerm2](https://iterm2.com/)：一个传统的 Mac 终端的替代品，可以提供更多的功能和配置。
+- [~~iTerm2~~](https://iterm2.com/)：一个传统的 Mac 终端的替代品，可以提供更多的功能和配置。
+- [OrbStack](https://orbstack.dev/): 我感觉挺好用的，是 Docker 的 GUI 层，而且默认挂载了存储什么的。`brew install orbstack`。
+- Navicat Permium: DDDD
+- RedisInsight: `brew install redisinsight`
+- [Proxyman](https://proxyman.io/): 代理抓包工具
+- [Cody](https://about.sourcegraph.com/cody)
+- [SwitchHost]: host 管理工具，`brew install switchhosts`
 
-## 可选的包或者工具
+## 命令行工具
 
 以下包基本都可以通过 brew 安装
 
@@ -61,7 +66,7 @@ plugins=(git gitignore z zsh-syntax-highlighting zsh-autosuggestions)
 - macos-trash：用移动到废纸篓替代 rm
 - gh：GitHub 官方命令行工具
 
-## 实用的软件推荐
+## 其他软件
 
 - [~~PD-Runner~~](https://github.com/lihaoyun6/PD-Runner)：Parallel Desktop 启动器
 - [Mos](https://github.com/Caldis/Mos)：macOS 上平滑鼠标滚动的工具
@@ -69,4 +74,14 @@ plugins=(git gitignore z zsh-syntax-highlighting zsh-autosuggestions)
 - [BetterDisplay](https://github.com/waydabber/BetterDisplay)：更好的显示器管理工具，可以设置显示器的亮度和音量、分辨率等；brew 可以安装
 - [~~MonitorControl~~](https://github.com/MonitorControl/MonitorControl)：支持通过快捷键控制第三方外置显示器的亮度和音量，我已经换成上面那个家伙了，不过这个也够用了
 - [noTunes](https://github.com/tombonez/noTunes)：完美屏蔽 iTunes，在没有打开任何音乐软件的情况下按播放键可以打开指定的软件
-- [iShot](https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E8%B4%B4%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%BD%95%E9%9F%B3ocr%E7%BF%BB%E8%AF%91%E5%8F%96%E8%89%B2%E6%A0%87%E6%B3%A8%E5%B7%A5%E5%85%B7/id1485844094?mt=12)
+- [iShot](https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E8%B4%B4%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%BD%95%E9%9F%B3ocr%E7%BF%BB%E8%AF%91%E5%8F%96%E8%89%B2%E6%A0%87%E6%B3%A8%E5%B7%A5%E5%85%B7/id1485844094?mt=12): 截图工具
+- [~~jietu~~](https://jietu.qq.com/): 多显示器截图容易出问题，所以换成上面那个了，单显示器的话这个还不错
+- [Typora]: Markdown 编辑器
+- [uPic]: 图片管理，可以配合 Typora 自动上传图片
+- [ClashXPro]: 谁不喜欢在 Mac 上养只猫呢
+- Motrix: 下载工具
+- Infuse: 媒体库查看和管理
+- Spacedrive: 多存储的管理，替代 finder，还没完成开发
+- Maccy: 剪贴板管理
+- SideNote: 侧边栏笔记
+- Bartender: 菜单栏管理
